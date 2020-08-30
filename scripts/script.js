@@ -1,17 +1,6 @@
-import "./pages/index.css";
-
-import {Api} from './api.js';
-import {Card} from './card.js';
-import {CardList} from './cardlist.js';
-import {initialCards} from './data.js';
-import {Popup} from './popup.js';
-import {UserInfo} from './userinfo.js';
-
-
 (function (){
 
 const cardsContent = document.querySelector('.places-list');
-const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort11' : 'https://praktikum.tk/cohort11';
 
 const form = document.forms.new;
 const inputName = form.elements.name;
@@ -47,7 +36,7 @@ const cardCatalog = new CardList(cardsContent, createCard, imagePopupInstance.op
 //cardCatalog.render(initialCards);
 
 const config = {
-  url: serverUrl,
+  url: 'https://praktikum.tk/cohort11',
   headers:
     {
       authorization: '958efbfd-3413-4c9f-91d4-cc966f71b0c9',

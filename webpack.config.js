@@ -24,16 +24,17 @@ module.exports = {
                 loader: "babel-loader"
             }
         },
+
             {
                 test: /\.css$/i,
                 use: [
                     (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-{
-    loader:'css-loader',
-    options: {
-        importLoaders: 2
-    } 
-}, 
+                    {
+					    loader:'css-loader',
+					    options: {
+					        importLoaders: 2
+					    } 
+					},
                     'postcss-loader'
                 ]
             },
