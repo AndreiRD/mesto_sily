@@ -10,7 +10,7 @@
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="<%=require('../images/logo.svg')%>" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -27,7 +27,7 @@
     </div>
     <div class="popup popup_cards">
       <div class="popup__content">
-        <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new" novalidate>
             <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название" required>
@@ -40,7 +40,7 @@
     </div>
     <div class="popup popup_edit">
       <div class="popup__content">
-        <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close popup__close_edit">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close popup__close_edit">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form" name="editForm" novalidate>
             <input type="text" name="fullName" class="popup__input popup__input_type_name" value="Jaques Causteau" required>
@@ -54,7 +54,7 @@
     <div class="popup popup_image">
       <div class="popup__image-container">
         <img class="popup__image-large">
-        <img src="<%=require('../images/close.svg')%>" alt="Закрыть картинку" class="popup__close popup__close_image">
+        <img src="<%=require('./images/close.svg')%>" alt="Закрыть картинку" class="popup__close popup__close_image">
       </div>
     </div> 
   </div>
